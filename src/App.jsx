@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Palette, TrendingDown, Zap, BookOpen, Settings, Menu, X, ChevronRight, Award } from 'lucide-react';
+import { Palette, TrendingDown, Zap, BookOpen, Menu, X, ChevronRight, Award } from 'lucide-react';
 
 const ArtFlowApp = () => {
   const [currentPage, setCurrentPage] = useState('home');
   const [menuOpen, setMenuOpen] = useState(false);
   const [anxietyLevel, setAnxietyLevel] = useState(5);
-  const [sessions, setSessions] = useState([
+  const [sessions] = useState([
     { id: 1, name: 'Today', anxiety: 7, mood: 'stressed', activities: 1 },
     { id: 2, name: 'Yesterday', anxiety: 6, mood: 'anxious', activities: 2 },
     { id: 3, name: '2 days ago', anxiety: 8, mood: 'overwhelmed', activities: 0 },
