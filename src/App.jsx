@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Palette, TrendingDown, Zap, BookOpen, Menu, X, ChevronRight, Award, LogOut } from 'lucide-react';
+import { Palette, TrendingDown, Zap, Menu, X, ChevronRight, LogOut } from 'lucide-react';
 import { auth, db } from './firebase-config';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth';
 import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
